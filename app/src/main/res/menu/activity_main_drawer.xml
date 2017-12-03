@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Beranda"/>
+        <item
+            android:id="@+id/nav_laporkan"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Laporkan Masalah"/>
+        <item
+            android:id="@+id/nav_laporanku"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="laporanku"/>
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_bantuan"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Bantuan"/>
+            <item
+                android:id="@+id/nav_keluar"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Keluar"/>
+        </menu>
+    </item>
+
+</menu>
