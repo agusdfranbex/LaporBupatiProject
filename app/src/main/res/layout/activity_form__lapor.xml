@@ -1,66 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.wearedev.laporbupati.Form_Lapor">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:orientation="vertical"
-        android:paddingTop="15sp"
-        android:paddingBottom="15sp"
-        android:paddingLeft="15sp"
-        android:paddingRight="15sp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"
-        android:weightSum="1">
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Masukkan Email anda disini "/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15sp"
-            android:id="@+id/editemail"
-            />
-        <TextView
-            android:layout_marginTop="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="masukkan nomer telfon"
-            />
-        <EditText
-            android:layout_marginTop="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edittelfon"
-            />
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Masukkan Email anda disini "/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15sp"
+                            android:id="@+id/editemail"
+                            />
+                        <TextView
+                            android:layout_marginTop="15sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/masukkan_nomer_telfon"/>
+                        <EditText
+                            android:layout_marginTop="15sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edittelfon"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Laporan anda"
-            android:layout_marginTop="15sp"/>
-        <EditText
-            android:layout_marginTop="15sp"
-            android:id="@+id/editlaporanku"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.65"
-            android:ems="10"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Laporkan"
-            android:layout_marginTop="15sp"
-            android:id="@+id/button_laporkan"/>
-        </LinearLayout>
-    </ScrollView>
-</android.support.constraint.ConstraintLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Laporan anda"
+                            android:layout_marginTop="15sp"/>
+                        <EditText
+                            android:layout_marginTop="15sp"
+                            android:id="@+id/editlaporanku"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"/>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Laporkan"
+                            android:layout_marginTop="15sp"
+                            android:id="@+id/button_laporkan"/>
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>

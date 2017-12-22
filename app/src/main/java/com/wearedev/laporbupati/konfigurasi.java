@@ -6,8 +6,8 @@ package com.wearedev.laporbupati;
 
 public class konfigurasi {
 //pengalamatan file php yg adadi komputer atau server
-    public final static String URL_SIMPAN = "http://192.168.44.141/laporbupati/posting_laporan.php";
-    public final static String URL_TAMPIL = "http://192.168.44.141/laporbupati/posting_laporan.php"
+    public final static String URL_SIMPAN = "http://10.0.81.78/laporbupati/posting_laporan.php";
+    public final static String URL_TAMPIL = "http://10.0.81.78/laporbupati/tampil_semua_laporan.php";
 
 //merupakan kunci untuk memnggil script php
     public static final String KEY_EMP_ID = "id";
@@ -21,9 +21,9 @@ public class konfigurasi {
     public static final String TAG_JSON_ARRAY= "result";
     public static final String TAG_ID = "id";
     public static final String TAG_NAMA = "name";
-    public static final String TAG_POSISI = "desg";
-    public static final String TAG_GAJI = "salary";
-    public static final String TAG_ALMT = "alamat";
+    public static final String TAG_EMAIL = "email";
+    public static final String TAG_TELP = "telp";
+    public static final String TAG_LAPOR = "lapor";
 
 //ID karyawan
 //emp itu singkatan dari Employee

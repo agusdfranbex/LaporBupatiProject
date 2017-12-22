@@ -5,8 +5,11 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.HashMap;
@@ -16,6 +19,7 @@ public class Form_Lapor extends AppCompatActivity implements View.OnClickListene
     EditText Et_email;
     EditText Et_telfon;
     EditText Et_laporan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +51,7 @@ public class Form_Lapor extends AppCompatActivity implements View.OnClickListene
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                Loading =ProgressDialog.show(Form_Lapor.this,"Posting Laporan","Mohon Tunggu",false,false);
+                Loading =ProgressDialog.show(Form_Lapor.this,"Posting Daftar_laporan","Mohon Tunggu",false,false);
             }
 
             @Override
@@ -83,4 +87,7 @@ public class Form_Lapor extends AppCompatActivity implements View.OnClickListene
             clear();
         }
     }
+
+    //funsi tampil data untuk spinner
+
 }
